@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "es2022",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "moduleResolution":"Node",
+    "jsx": "react",
+    "types": ["cypress", "node"],
+    "outDir": "./dist"
+  },
+  "include": [
+    "src",
+    "cypress",
+    "**/*.ts",
+    "**/*.tsx",
+  ],
+  "exclude": [ "node_modules"]
+}
