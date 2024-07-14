@@ -28,7 +28,7 @@ describe('GraphQL API Request Failure Tests', () => {
 });
 
 //Check the Admin radio button on click
-describe('show Zeller admins', () => {
+describe('Show Zeller admins', () => {
   it('users can view the admin list', () => {
     //visit app homepage
     cy.visit(host);
@@ -49,7 +49,7 @@ describe('show Zeller admins', () => {
   })
 })
 
-describe('show Zeller managers', () => {
+describe('Show Zeller managers', () => {
   it('users can view the manager list', () => {
     //visit app homepage
     cy.visit(host); 
