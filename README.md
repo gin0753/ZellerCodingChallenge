@@ -28,19 +28,6 @@ The first test intercepts the GraphQL request and mocks a failure response which
 The second and third tests check user interactions: whether the radio button is checked after clicking;
 the user list title should contain 'Admin/Manager'; each user should have a name and admin/manager role.
 
-### Best practices for performance optimisation
-
-This application is very straightforward with no expensive calculations or computations, therefore, useMemo or useCallback is unnecessary.
-
-I did use one React.memo function to ensure that this child component(List.tsx) will not be re-rendered if the props are not changed, even if its parent component re-rendered. But in fact, the parent component(UserInfo.tsx) receives no props and won't be updated during
-user interactions, so the React.memo function could be removed as well. 
-
-I also used React fragment to remove unnecessary nodes on DOM which optimised the performance.
-
-The project structure and React best practices secured the performance; I used the dev tool Profiler to monitor each render duration,
-the longest duration is 7.6ms, which is not bad.
-![alt text](public/Performance.png)
-
 ### Quality and Responsive UI
 
 The application utilizes Tailwind CSS's responsive design:
